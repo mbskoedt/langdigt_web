@@ -25,7 +25,7 @@ changeCharachters();
 
 function pushLine() {
   // get the values from the input fields
-  let line = "Vi " + document.querySelector('#add-poem-form input[name=name]').value;
+  let line = "<i>Vi</i> " + document.querySelector('#add-poem-form input[name=name]').value;
 
   newPoemArray.push(line);
 
@@ -35,23 +35,3 @@ function pushLine() {
 
   changeCharachters();
 }
-
-
-/*
-
-First you should get the data into a variable
-
-var getData =
-{
-   "firstData":"data1",
-   "secondData":"data2",
-   "thirdData": "data3"
-}
-Then you can set the above data's in localStorage...
-
-localStorage.setItem('dataKey', JSON.stringify(getData ));
-Then get....
-
-var val = localStorage.getItem('dataKey');
-
-*/
