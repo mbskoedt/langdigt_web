@@ -1,0 +1,132 @@
+html {
+  color: #333;
+  display: table;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden;
+}
+
+body {
+    background-image : url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=5c5c5c&density=13&opacity=10);
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-splitter {
+  background-color: rgb(255, 165, 0);
+  height: 1vh;
+}
+
+/* input form stryling */
+.form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.label-input-field {
+  display: flex;
+  align-items: baseline;
+}
+
+label {
+  cursor: default;
+  font-family: 'Roboto', sans-serif;
+  background-color: lightgrey;
+  border: solid;
+  border-width: thin;
+  padding: 12px 10px;
+  border-radius: 3px;
+
+}
+
+.form button {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  padding: 12px 15px;
+  font-size: 1em;
+  border-radius: 0;
+  color: black !important;
+  background-color: rgb(255, 165, 0);
+  width: 100%;
+  margin-top: 2vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  width: 100%;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* .magic for Testrup */
+.shimmer {
+  display: inline-block;
+  color: black;
+  background: black -webkit-gradient(linear, 100% 0, 0 0, from(#ffa500), color-stop(0.5, #ffffff), to(black));
+  background-position: -4rem top;
+  /*50px*/
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-name: shimmer;
+  -webkit-animation-duration: 3.2s;
+  -webkit-animation-iteration-count: infinite;
+  /*50px*/
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: -4rem top;
+    /*50px*/
+  }
+
+  70% {
+    background-position: 12.5rem top;
+    /*200px*/
+  }
+
+  100% {
+    background-position: 12.5rem top;
+    /*200px*/
+  }
+}
+
+@media (min-width: 1200px) {
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+  body {
+    margin-top: 5%;
+    width: 30%;
+  }
+
+}
