@@ -2,7 +2,10 @@
 
 let poem = [];
 
-// localStorage.setItem("dataKey", poem);
+function resetLocalStorage() {
+  localStorage.setItem("dataKey", poem);
+  window.location.reload();
+}
 
 let newPoemArray = [];
 
